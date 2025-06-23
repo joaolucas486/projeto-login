@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/* Breakpoints de Dispositivos
+---------------------------------------------
+Pequenas telas / Smartphones pequenos: até 479px
+Celulares (retratos comuns): 480px até 767px
+Tablets (modo retrato e paisagem): 768px até 1023px
+Laptops / Desktops pequenos: 1024px até 1439px
+Desktops grandes / Monitores HD+: 1440px até 1919px
+Ultra-wide / 4K e maiores: 1920px ou mais
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 80vw;
+    }
+    
+    section#login div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+        background: url(../imagens/pexels-pixabay-207569.jpg) no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    
+    section#login {
+        width: 950px;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+
+        background: url(../imagens/pexels-natri-792199.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 50%;
+    }
+}

@@ -12,71 +12,48 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-html, body {
-    width: 100vw;
-    height: 100vh;
-}
-
-body {
+body, html {
     background-color: var(--cor02);
+    height: 100vh;
+    width: 100vw;
 }
 
-section {
-    background-color: white;
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
 
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-
     transform: translate(-50%, -50%);
+    overflow: hidden;
 
-    padding: 15px;
-
-    height: 15em;
-    width: 40em;
-
+    background-color: white;
+    width: 250px;
+    height: 500px;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+
 }
 
-div#formulario h1 {
-    text-align: center;
-    padding-bottom: 15px;
-    font-size: 2em;
+section#login > div#imagem {
+    display: block;
+    background: var(--cor02) url(../imagens/pexels-tofros-com-83191-359757\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
 }
 
-div#formulario p {
-    text-align: justify;
-    font-size: 0.9em;
-    font-weight: normal;
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
 }
-
-div#formulario div.login {
-    background-color: var(--cor02);
-    border-radius: 10px;
-    width: 600px;
-    height: 40px;
-}
-
-div#formulario input#iemail, input#isen {
-    border-radius: 10px;
-    width: 555px;
-    height: 30px;
-    background-color: #62cdc9;
-}
-
-span.material-symbols-outlined {
-    font-size: 35px;
-    vertical-align: middle;
-}
-
-div#entrar {
-    padding-top: 15px;
-    padding-bottom: 7px;
-    width: 550px;
-    
-}
-
-
 
