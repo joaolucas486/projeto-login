@@ -16,15 +16,25 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamento. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="cadastro.php" method="get">
-                    <div>
+                <form action="cadastro.php" method="get" autocomplete="on">
+                    <div class="login">
                         <label for="iemail"><span class="material-symbols-outlined">person</span></label>
                         <input type="email" name="email" id="iemail" required placeholder="Seu email">
+                    </div>
 
-                        <br>
+                    <br>
 
+                    <div class="login">
                         <label for="isen"><span class="material-symbols-outlined">key</span></label>
                         <input type="password" name="sen" id="isen" required min="8" max="30" placeholder="Sua senha">
+                    </div>
+
+                    <div id="entrar">
+                        <input type="submit" value="Entrar">
+                    </div>
+
+                    <div id="esqueci">
+                        <input type="submit" value="Esqueci a senha">
                     </div>
                 </form>
             </div>
